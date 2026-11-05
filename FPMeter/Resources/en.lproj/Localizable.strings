@@ -1,0 +1,217 @@
+/* FPMeter — English */
+
+// Common
+"common.save" = "Save";
+"common.cancel" = "Cancel";
+"common.delete" = "Delete";
+"common.edit" = "Edit";
+"common.duplicate" = "Duplicate";
+"common.back" = "Back";
+"common.confirm" = "Confirm";
+"common.ok" = "OK";
+"common.close" = "Close";
+"common.loading" = "Loading…";
+"common.error" = "Something went wrong";
+"common.optional" = "Optional";
+
+// Dashboard
+"dashboard.title" = "FP Meter";
+"dashboard.subtitle" = "Function Point Calculator";
+"dashboard.emptyTitle" = "No projects yet";
+"dashboard.emptyBody" = "Create your first project to start estimating Function Points.";
+"dashboard.createFirst" = "Create Your First Project";
+"dashboard.openGlossary" = "Glossary";
+"dashboard.openSettings" = "Settings";
+"dashboard.newProject" = "New Project";
+"dashboard.updatedAt" = "Updated %@";
+
+// Project
+"project.name" = "Project Name";
+"project.namePlaceholder" = "e.g. E-commerce Platform";
+"project.description" = "Description";
+"project.descriptionPlaceholder" = "Brief description (optional)";
+"project.language" = "Primary Language";
+"project.languagePlaceholder" = "e.g. TypeScript, Java";
+"project.totalUFP" = "Total UFP";
+"project.vaf" = "VAF";
+"project.totalAFP" = "Total AFP";
+"project.tabs.transactions" = "Transactions";
+"project.tabs.vaf" = "VAF Settings";
+"project.calculateResult" = "Calculate Result";
+"project.newTransaction" = "New Transaction";
+"project.emptyTx" = "No transactions yet";
+"project.emptyTxBody" = "Add ILF, EIF, EI, EO, or EQ transactions to calculate FP.";
+"project.addTransaction" = "Add Transaction";
+"project.deleteProjectTitle" = "Delete project?";
+"project.deleteProjectBody" = "This will permanently delete the project and all its transactions.";
+"project.duplicateTitle" = "Duplicate project";
+"project.vafDescription" = "Rate each General System Characteristic from 0 (no influence) to 5 (strong influence).";
+"project.saveVAF" = "Save VAF Settings";
+"project.vafSaved" = "VAF settings saved";
+
+// Transaction
+"transaction.name" = "Transaction Name";
+"transaction.namePlaceholder" = "e.g. User Login Form";
+"transaction.notes" = "Notes";
+"transaction.notesPlaceholder" = "Optional notes";
+"transaction.selectType" = "Transaction Type";
+"transaction.det" = "DET (Data Element Types)";
+"transaction.detHint" = "Count each unique, user-recognizable, non-repeated field.";
+"transaction.ret" = "RET (Record Element Types)";
+"transaction.retHint" = "Count each user-recognizable subgroup of data.";
+"transaction.ftr" = "FTR (File Types Referenced)";
+"transaction.ftrHint" = "Count each ILF or EIF this transaction reads or updates.";
+"transaction.livePreview" = "LIVE PREVIEW";
+"transaction.save" = "Save Transaction";
+"transaction.update" = "Update Transaction";
+"transaction.deleteTitle" = "Delete transaction?";
+"transaction.deleteBody" = "This cannot be undone.";
+"transaction.errorDetMin" = "DET must be at least 1";
+"transaction.errorNameRequired" = "Transaction name is required";
+"transaction.errorProjectNameRequired" = "Project name is required";
+
+// Transaction types
+"type.ILF.short" = "Internal Logical File";
+"type.ILF.desc" = "Data stored & maintained by your app";
+"type.ILF.example" = "User accounts stored in your app's database.";
+"type.EIF.short" = "External Interface File";
+"type.EIF.desc" = "Data referenced from external systems";
+"type.EIF.example" = "Product catalog fetched from a 3rd-party supplier API.";
+"type.EI.short" = "External Input";
+"type.EI.desc" = "Data coming into your app (e.g. form)";
+"type.EI.example" = "A login form submitted by the user.";
+"type.EO.short" = "External Output";
+"type.EO.desc" = "Data sent out with processing (e.g. report)";
+"type.EO.example" = "A monthly sales report generated as a PDF.";
+"type.EQ.short" = "External Inquiry";
+"type.EQ.desc" = "Data retrieval without processing (e.g. search)";
+"type.EQ.example" = "A search box that returns filtered product results.";
+
+// Result
+"result.title" = "FP Result";
+"result.breakdown" = "FP Breakdown";
+"result.summary" = "Summary by Type";
+"result.typeCol" = "Type";
+"result.countCol" = "Count";
+"result.ufpCol" = "UFP";
+"result.percentCol" = "%";
+"result.estimate" = "Man-Month Estimate";
+"result.low" = "Optimistic";
+"result.average" = "Expected";
+"result.high" = "Conservative";
+"result.teamSize" = "Team Size";
+"result.calendarMonths" = "months";
+"result.productivityNote" = "Productivity: %@ FP / person-month";
+"result.industryNote" = "Industry typical range: 5–15 FP per person-month";
+"result.export" = "Export";
+"result.copySummary" = "Copy Summary";
+"result.share" = "Share";
+"result.copied" = "Summary copied to clipboard";
+
+// Glossary
+"glossary.title" = "FP Glossary";
+"glossary.intro" = "A practical guide to the IFPUG Function Point Analysis terms used in this app.";
+"glossary.quickReference" = "Quick Reference";
+"glossary.whenToUse" = "When to use";
+"glossary.parameters" = "Complexity parameters";
+"glossary.example" = "Example";
+"glossary.terms.ILF.desc" = "An Internal Logical File (ILF) represents a user-recognizable group of logically related data maintained within the boundary of the application.";
+"glossary.terms.ILF.whenToUse" = "Any table or data store that your app creates, reads, updates, or deletes.";
+"glossary.terms.ILF.example" = "User account data stored in your app's own database.";
+"glossary.terms.EIF.desc" = "An External Interface File (EIF) is a group of logically related data referenced by the application, but maintained by another application.";
+"glossary.terms.EIF.whenToUse" = "Data you read from another system but don't own.";
+"glossary.terms.EIF.example" = "Product catalog data fetched from a 3rd-party supplier API.";
+"glossary.terms.EI.desc" = "An External Input (EI) processes data or control information that crosses the boundary from outside to inside the application.";
+"glossary.terms.EI.whenToUse" = "Any form submission, API call received, or bulk import.";
+"glossary.terms.EI.example" = "A login form submitted by the user.";
+"glossary.terms.EO.desc" = "An External Output (EO) sends data or control information out of the application boundary, including derived data (calculations, totals).";
+"glossary.terms.EO.whenToUse" = "Reports, exports, or dashboards that perform calculations or aggregation.";
+"glossary.terms.EO.example" = "A monthly sales report generated and downloaded as a PDF.";
+"glossary.terms.EQ.desc" = "An External Inquiry (EQ) is a retrieval of data — input + output pair — that does not maintain any ILF and does not contain derived data.";
+"glossary.terms.EQ.whenToUse" = "Simple queries and searches that just return existing data.";
+"glossary.terms.EQ.example" = "A search box that returns filtered product results.";
+"glossary.terms.DET.desc" = "A Data Element Type (DET) is a unique user-recognizable, non-repeated field.";
+"glossary.terms.DET.example" = "Each field in a form (email, password, name = 3 DETs).";
+"glossary.terms.RET.desc" = "A Record Element Type (RET) is a user-recognizable subgroup of data elements within an ILF or EIF.";
+"glossary.terms.RET.example" = "A user profile with sub-sections: basic info + address = 2 RETs.";
+"glossary.terms.FTR.desc" = "A File Type Referenced (FTR) is an ILF or EIF read or maintained by a transactional function (EI/EO/EQ).";
+"glossary.terms.FTR.example" = "A login EI reads from the Users table and the Roles table = 2 FTRs.";
+"glossary.terms.UFP.desc" = "Unadjusted Function Points — the sum of complexity-weighted function points before applying technical adjustments.";
+"glossary.terms.UFP.example" = "5 Low EIs × 3 UFP = 15 UFP.";
+"glossary.terms.AFP.desc" = "Adjusted Function Points — UFP multiplied by the Value Adjustment Factor (VAF).";
+"glossary.terms.AFP.example" = "AFP = UFP × VAF.";
+"glossary.terms.VAF.desc" = "Value Adjustment Factor — a multiplier from 0.65 to 1.35 derived from 14 General System Characteristics.";
+"glossary.terms.VAF.example" = "VAF = 0.65 + (0.01 × sum of 14 GSC ratings).";
+"glossary.terms.GSC.desc" = "General System Characteristics — 14 factors rated 0–5 that describe the technical and operational context of the system.";
+"glossary.terms.GSC.example" = "Performance, transaction rate, reusability, multiple sites, etc.";
+"glossary.terms.MM.desc" = "Man-Month (or Person-Month) — a unit of effort equal to one person working for one month. Calculated as AFP ÷ productivity factor.";
+"glossary.terms.MM.example" = "60 AFP ÷ 8 FP/PM = 7.5 person-months.";
+
+// Settings
+"settings.title" = "Settings";
+"settings.language" = "Language";
+"settings.systemDefault" = "System default";
+"settings.productivity" = "Productivity Factor";
+"settings.productivityDesc" = "FP per person-month. Higher = fewer months needed.";
+"settings.presets" = "Presets";
+"settings.presetIndustry" = "Industry Average";
+"settings.presetExperienced" = "Experienced Team";
+"settings.presetComplex" = "Complex Domain";
+"settings.low" = "Low";
+"settings.average" = "Average";
+"settings.high" = "High";
+"settings.vafToggle" = "Apply VAF to AFP";
+"settings.vafToggleDesc" = "When off, AFP equals UFP (unadjusted mode).";
+"settings.haptics" = "Haptic Feedback";
+"settings.hapticsDesc" = "Light vibration when complexity changes.";
+"settings.quickAdd" = "Quick Add Templates";
+"settings.quickAddDesc" = "Enable preset transaction bundles (e.g. CRUD form set).";
+"settings.data" = "Data Management";
+"settings.clearAll" = "Clear all data";
+"settings.clearTitle" = "Clear all data?";
+"settings.clearBody" = "This will permanently delete all projects, transactions, and settings. This cannot be undone.";
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.privacy" = "Privacy";
+"settings.privacyBody" = "FP Meter stores all data locally on your device. Nothing is ever sent to any server.";
+
+// Quick Add
+"quickAdd.title" = "Quick Add Template";
+"quickAdd.description" = "Add a preset bundle of transactions in one step.";
+"quickAdd.crudTitle" = "CRUD Form Set";
+"quickAdd.crudDesc" = "1 ILF + 4 transactions (Create, Read, Update, Delete + list view).";
+"quickAdd.loginTitle" = "Authentication Set";
+"quickAdd.loginDesc" = "1 ILF (Users) + Login EI + Logout EI + Password Reset EI.";
+"quickAdd.reportTitle" = "Reporting Module";
+"quickAdd.reportDesc" = "1 EO (report generator) + 2 EQs (filter queries).";
+"quickAdd.bundleAdded" = "%d transactions added";
+
+// GSC
+"gsc.dataCommunications" = "Data Communications";
+"gsc.dataCommunications.desc" = "How many communication facilities aid the transfer or exchange of information with the application.";
+"gsc.distributedDataProcessing" = "Distributed Data Processing";
+"gsc.distributedDataProcessing.desc" = "How distributed data and processing functions are handled.";
+"gsc.performance" = "Performance";
+"gsc.performance.desc" = "How much response time or throughput was considered in the design.";
+"gsc.heavilyUsedConfiguration" = "Heavily Used Configuration";
+"gsc.heavilyUsedConfiguration.desc" = "How heavily used the current hardware platform is.";
+"gsc.transactionRate" = "Transaction Rate";
+"gsc.transactionRate.desc" = "How frequently transactions are executed.";
+"gsc.onlineDataEntry" = "Online Data Entry";
+"gsc.onlineDataEntry.desc" = "What percentage of the information is entered online.";
+"gsc.endUserEfficiency" = "End-User Efficiency";
+"gsc.endUserEfficiency.desc" = "Was the application designed for end-user efficiency.";
+"gsc.onlineUpdate" = "Online Update";
+"gsc.onlineUpdate.desc" = "How many ILFs are updated by online transactions.";
+"gsc.complexProcessing" = "Complex Processing";
+"gsc.complexProcessing.desc" = "How extensive is the logical/mathematical processing.";
+"gsc.reusability" = "Reusability";
+"gsc.reusability.desc" = "Was the application developed to meet one or many users' needs.";
+"gsc.installationEase" = "Installation Ease";
+"gsc.installationEase.desc" = "How difficult is conversion and installation.";
+"gsc.operationalEase" = "Operational Ease";
+"gsc.operationalEase.desc" = "How effective are startup, backup, and recovery procedures.";
+"gsc.multipleSites" = "Multiple Sites";
+"gsc.multipleSites.desc" = "Was the application designed for multiple locations.";
+"gsc.facilitateChange" = "Facilitate Change";
+"gsc.facilitateChange.desc" = "Was the application designed to facilitate change.";

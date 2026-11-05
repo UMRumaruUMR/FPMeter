@@ -1,0 +1,217 @@
+/* FPMeter — 한국어 */
+
+// Common
+"common.save" = "저장";
+"common.cancel" = "취소";
+"common.delete" = "삭제";
+"common.edit" = "편집";
+"common.duplicate" = "복제";
+"common.back" = "뒤로";
+"common.confirm" = "확인";
+"common.ok" = "확인";
+"common.close" = "닫기";
+"common.loading" = "불러오는 중…";
+"common.error" = "오류가 발생했습니다";
+"common.optional" = "선택";
+
+// Dashboard
+"dashboard.title" = "FP Meter";
+"dashboard.subtitle" = "기능 점수 계산기";
+"dashboard.emptyTitle" = "프로젝트가 없습니다";
+"dashboard.emptyBody" = "첫 프로젝트를 만들어 기능 점수 산정을 시작하세요.";
+"dashboard.createFirst" = "첫 프로젝트 만들기";
+"dashboard.openGlossary" = "용어집";
+"dashboard.openSettings" = "설정";
+"dashboard.newProject" = "새 프로젝트";
+"dashboard.updatedAt" = "수정: %@";
+
+// Project
+"project.name" = "프로젝트 이름";
+"project.namePlaceholder" = "예: 이커머스 플랫폼";
+"project.description" = "설명";
+"project.descriptionPlaceholder" = "간단한 설명 (선택)";
+"project.language" = "주 언어";
+"project.languagePlaceholder" = "예: TypeScript, Java";
+"project.totalUFP" = "총 UFP";
+"project.vaf" = "VAF";
+"project.totalAFP" = "총 AFP";
+"project.tabs.transactions" = "트랜잭션";
+"project.tabs.vaf" = "VAF 설정";
+"project.calculateResult" = "결과 계산";
+"project.newTransaction" = "새 트랜잭션";
+"project.emptyTx" = "트랜잭션이 없습니다";
+"project.emptyTxBody" = "ILF, EIF, EI, EO, EQ 트랜잭션을 추가하여 FP를 계산하세요.";
+"project.addTransaction" = "트랜잭션 추가";
+"project.deleteProjectTitle" = "프로젝트를 삭제하시겠어요?";
+"project.deleteProjectBody" = "프로젝트와 모든 트랜잭션이 영구 삭제됩니다.";
+"project.duplicateTitle" = "프로젝트 복제";
+"project.vafDescription" = "14개의 일반 시스템 특성을 0(영향 없음)부터 5(강한 영향)까지 평가하세요.";
+"project.saveVAF" = "VAF 설정 저장";
+"project.vafSaved" = "VAF 설정이 저장되었습니다";
+
+// Transaction
+"transaction.name" = "트랜잭션 이름";
+"transaction.namePlaceholder" = "예: 사용자 로그인 폼";
+"transaction.notes" = "메모";
+"transaction.notesPlaceholder" = "선택 메모";
+"transaction.selectType" = "트랜잭션 유형";
+"transaction.det" = "DET (데이터 요소 유형)";
+"transaction.detHint" = "사용자가 인식할 수 있는 고유하고 반복되지 않는 필드 수.";
+"transaction.ret" = "RET (레코드 요소 유형)";
+"transaction.retHint" = "사용자가 인식할 수 있는 데이터의 하위 그룹 수.";
+"transaction.ftr" = "FTR (참조 파일 유형)";
+"transaction.ftrHint" = "이 트랜잭션이 읽거나 갱신하는 ILF/EIF의 수.";
+"transaction.livePreview" = "실시간 미리보기";
+"transaction.save" = "트랜잭션 저장";
+"transaction.update" = "트랜잭션 수정";
+"transaction.deleteTitle" = "트랜잭션을 삭제하시겠어요?";
+"transaction.deleteBody" = "이 작업은 되돌릴 수 없습니다.";
+"transaction.errorDetMin" = "DET는 1 이상이어야 합니다";
+"transaction.errorNameRequired" = "트랜잭션 이름은 필수입니다";
+"transaction.errorProjectNameRequired" = "프로젝트 이름은 필수입니다";
+
+// Transaction types
+"type.ILF.short" = "내부 논리 파일";
+"type.ILF.desc" = "앱이 저장·관리하는 데이터";
+"type.ILF.example" = "앱의 데이터베이스에 저장된 사용자 계정.";
+"type.EIF.short" = "외부 인터페이스 파일";
+"type.EIF.desc" = "외부 시스템에서 참조되는 데이터";
+"type.EIF.example" = "외부 공급사 API에서 가져오는 상품 카탈로그.";
+"type.EI.short" = "외부 입력";
+"type.EI.desc" = "앱으로 들어오는 데이터 (예: 폼)";
+"type.EI.example" = "사용자가 제출한 로그인 폼.";
+"type.EO.short" = "외부 출력";
+"type.EO.desc" = "처리 결과를 내보내는 데이터 (예: 보고서)";
+"type.EO.example" = "PDF로 생성되는 월간 매출 보고서.";
+"type.EQ.short" = "외부 조회";
+"type.EQ.desc" = "처리 없이 데이터만 조회 (예: 검색)";
+"type.EQ.example" = "필터링된 상품 결과를 반환하는 검색 창.";
+
+// Result
+"result.title" = "FP 결과";
+"result.breakdown" = "FP 구성";
+"result.summary" = "유형별 요약";
+"result.typeCol" = "유형";
+"result.countCol" = "개수";
+"result.ufpCol" = "UFP";
+"result.percentCol" = "%";
+"result.estimate" = "맨먼스 추정";
+"result.low" = "낙관적";
+"result.average" = "표준";
+"result.high" = "보수적";
+"result.teamSize" = "팀 규모";
+"result.calendarMonths" = "개월";
+"result.productivityNote" = "생산성: %@ FP / 인월";
+"result.industryNote" = "업계 일반 범위: 인월당 5–15 FP";
+"result.export" = "내보내기";
+"result.copySummary" = "요약 복사";
+"result.share" = "공유";
+"result.copied" = "요약이 클립보드에 복사되었습니다";
+
+// Glossary
+"glossary.title" = "FP 용어집";
+"glossary.intro" = "이 앱에서 사용하는 IFPUG 기능 점수 분석 용어의 실무 가이드입니다.";
+"glossary.quickReference" = "요약 참조";
+"glossary.whenToUse" = "사용 시점";
+"glossary.parameters" = "복잡도 매개변수";
+"glossary.example" = "예시";
+"glossary.terms.ILF.desc" = "내부 논리 파일(ILF)은 애플리케이션 경계 내에서 유지되는, 사용자가 인식 가능한 논리적으로 관련된 데이터 그룹입니다.";
+"glossary.terms.ILF.whenToUse" = "앱이 생성, 조회, 수정, 삭제하는 테이블이나 데이터 저장소.";
+"glossary.terms.ILF.example" = "앱의 데이터베이스에 저장된 사용자 계정 데이터.";
+"glossary.terms.EIF.desc" = "외부 인터페이스 파일(EIF)은 다른 애플리케이션이 관리하지만 이 앱이 참조하는 데이터 그룹입니다.";
+"glossary.terms.EIF.whenToUse" = "다른 시스템에서 읽어오지만 소유하지 않는 데이터.";
+"glossary.terms.EIF.example" = "외부 공급사 API에서 가져오는 상품 카탈로그.";
+"glossary.terms.EI.desc" = "외부 입력(EI)은 애플리케이션 경계 밖에서 안으로 들어오는 데이터·제어 정보를 처리합니다.";
+"glossary.terms.EI.whenToUse" = "폼 제출, 수신 API 호출, 일괄 가져오기.";
+"glossary.terms.EI.example" = "사용자가 제출한 로그인 폼.";
+"glossary.terms.EO.desc" = "외부 출력(EO)은 계산·집계 등 파생 데이터를 포함하여 애플리케이션 경계 밖으로 내보내는 데이터·제어 정보입니다.";
+"glossary.terms.EO.whenToUse" = "계산이나 집계를 수행하는 보고서, 내보내기, 대시보드.";
+"glossary.terms.EO.example" = "PDF로 생성·다운로드되는 월간 매출 보고서.";
+"glossary.terms.EQ.desc" = "외부 조회(EQ)는 ILF를 유지하지 않고 파생 데이터가 없는, 입력-출력 쌍의 데이터 조회입니다.";
+"glossary.terms.EQ.whenToUse" = "기존 데이터만 반환하는 단순 질의나 검색.";
+"glossary.terms.EQ.example" = "필터링된 상품 결과를 반환하는 검색 창.";
+"glossary.terms.DET.desc" = "데이터 요소 유형(DET)은 사용자가 인식할 수 있는 고유하고 반복되지 않는 필드입니다.";
+"glossary.terms.DET.example" = "폼의 각 필드(이메일, 비밀번호, 이름 = 3 DET).";
+"glossary.terms.RET.desc" = "레코드 요소 유형(RET)은 ILF/EIF 내에서 사용자가 인식 가능한 데이터 요소의 하위 그룹입니다.";
+"glossary.terms.RET.example" = "하위 섹션이 있는 사용자 프로필: 기본정보 + 주소 = 2 RET.";
+"glossary.terms.FTR.desc" = "참조 파일 유형(FTR)은 트랜잭션 기능(EI/EO/EQ)이 읽거나 유지하는 ILF 또는 EIF입니다.";
+"glossary.terms.FTR.example" = "로그인 EI가 Users와 Roles 테이블을 읽음 = 2 FTR.";
+"glossary.terms.UFP.desc" = "조정 전 기능 점수 — 기술적 조정 전 복잡도 가중치가 적용된 기능 점수의 합.";
+"glossary.terms.UFP.example" = "Low EI 5개 × 3 UFP = 15 UFP.";
+"glossary.terms.AFP.desc" = "조정 후 기능 점수 — UFP에 가치 조정 인자(VAF)를 곱한 값.";
+"glossary.terms.AFP.example" = "AFP = UFP × VAF.";
+"glossary.terms.VAF.desc" = "가치 조정 인자 — 14개 일반 시스템 특성에서 도출되는 0.65~1.35의 승수.";
+"glossary.terms.VAF.example" = "VAF = 0.65 + (0.01 × 14개 GSC 합계).";
+"glossary.terms.GSC.desc" = "일반 시스템 특성 — 시스템의 기술적·운영적 맥락을 나타내는 14개 요인, 각 0–5점.";
+"glossary.terms.GSC.example" = "성능, 트랜잭션율, 재사용성, 다중 사이트 등.";
+"glossary.terms.MM.desc" = "맨먼스(인월) — 한 사람이 한 달 일하는 노력의 단위. AFP ÷ 생산성 인자로 계산.";
+"glossary.terms.MM.example" = "60 AFP ÷ 8 FP/PM = 7.5 인월.";
+
+// Settings
+"settings.title" = "설정";
+"settings.language" = "언어";
+"settings.systemDefault" = "시스템 기본값";
+"settings.productivity" = "생산성 인자";
+"settings.productivityDesc" = "인월당 FP. 높을수록 필요한 기간이 짧아집니다.";
+"settings.presets" = "프리셋";
+"settings.presetIndustry" = "업계 평균";
+"settings.presetExperienced" = "숙련 팀";
+"settings.presetComplex" = "복잡한 도메인";
+"settings.low" = "낮음";
+"settings.average" = "평균";
+"settings.high" = "높음";
+"settings.vafToggle" = "AFP에 VAF 적용";
+"settings.vafToggleDesc" = "끄면 AFP가 UFP와 같아집니다(조정 없음 모드).";
+"settings.haptics" = "햅틱 피드백";
+"settings.hapticsDesc" = "복잡도가 바뀔 때 가볍게 진동.";
+"settings.quickAdd" = "빠른 추가 템플릿";
+"settings.quickAddDesc" = "트랜잭션 프리셋 묶음 사용(예: CRUD 폼 세트).";
+"settings.data" = "데이터 관리";
+"settings.clearAll" = "모든 데이터 삭제";
+"settings.clearTitle" = "모든 데이터를 삭제하시겠어요?";
+"settings.clearBody" = "모든 프로젝트, 트랜잭션, 설정이 영구 삭제됩니다. 되돌릴 수 없습니다.";
+"settings.about" = "앱 정보";
+"settings.version" = "버전";
+"settings.privacy" = "개인정보";
+"settings.privacyBody" = "FP Meter는 모든 데이터를 기기 내부에만 저장합니다. 어떤 서버로도 전송되지 않습니다.";
+
+// Quick Add
+"quickAdd.title" = "빠른 추가 템플릿";
+"quickAdd.description" = "프리셋 트랜잭션 묶음을 한 번에 추가합니다.";
+"quickAdd.crudTitle" = "CRUD 폼 세트";
+"quickAdd.crudDesc" = "1 ILF + 4 트랜잭션 (생성, 조회, 수정, 삭제 + 목록).";
+"quickAdd.loginTitle" = "인증 세트";
+"quickAdd.loginDesc" = "1 ILF (Users) + 로그인 EI + 로그아웃 EI + 비밀번호 재설정 EI.";
+"quickAdd.reportTitle" = "보고 모듈";
+"quickAdd.reportDesc" = "1 EO (보고서 생성) + 2 EQ (필터 조회).";
+"quickAdd.bundleAdded" = "트랜잭션 %d개가 추가되었습니다";
+
+// GSC
+"gsc.dataCommunications" = "데이터 통신";
+"gsc.dataCommunications.desc" = "시스템이 정보 전송·교환에 사용하는 통신 시설 수준.";
+"gsc.distributedDataProcessing" = "분산 데이터 처리";
+"gsc.distributedDataProcessing.desc" = "분산 데이터와 처리 기능을 다루는 방식.";
+"gsc.performance" = "성능";
+"gsc.performance.desc" = "응답 시간·처리량을 설계에 얼마나 반영했는가.";
+"gsc.heavilyUsedConfiguration" = "고부하 구성";
+"gsc.heavilyUsedConfiguration.desc" = "현 하드웨어 플랫폼의 사용 강도.";
+"gsc.transactionRate" = "트랜잭션 율";
+"gsc.transactionRate.desc" = "트랜잭션 실행 빈도.";
+"gsc.onlineDataEntry" = "온라인 데이터 입력";
+"gsc.onlineDataEntry.desc" = "온라인으로 입력되는 정보 비율.";
+"gsc.endUserEfficiency" = "최종 사용자 효율성";
+"gsc.endUserEfficiency.desc" = "최종 사용자 효율을 얼마나 고려했는가.";
+"gsc.onlineUpdate" = "온라인 갱신";
+"gsc.onlineUpdate.desc" = "온라인 트랜잭션으로 갱신되는 ILF 수.";
+"gsc.complexProcessing" = "복잡한 처리";
+"gsc.complexProcessing.desc" = "논리·수학 처리의 광범위함.";
+"gsc.reusability" = "재사용성";
+"gsc.reusability.desc" = "여러 사용자의 요구를 충족하도록 개발되었는가.";
+"gsc.installationEase" = "설치 용이성";
+"gsc.installationEase.desc" = "전환·설치의 난이도.";
+"gsc.operationalEase" = "운영 용이성";
+"gsc.operationalEase.desc" = "시작·백업·복구 절차의 효과성.";
+"gsc.multipleSites" = "다중 사이트";
+"gsc.multipleSites.desc" = "다중 위치 대응 설계 여부.";
+"gsc.facilitateChange" = "변경 용이성";
+"gsc.facilitateChange.desc" = "변경을 촉진하도록 설계·개발·지원되었는가.";

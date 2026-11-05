@@ -1,0 +1,217 @@
+/* FPMeter — 日本語 */
+
+// Common
+"common.save" = "保存";
+"common.cancel" = "キャンセル";
+"common.delete" = "削除";
+"common.edit" = "編集";
+"common.duplicate" = "複製";
+"common.back" = "戻る";
+"common.confirm" = "確認";
+"common.ok" = "OK";
+"common.close" = "閉じる";
+"common.loading" = "読み込み中…";
+"common.error" = "エラーが発生しました";
+"common.optional" = "任意";
+
+// Dashboard
+"dashboard.title" = "FP Meter";
+"dashboard.subtitle" = "ファンクションポイント計算機";
+"dashboard.emptyTitle" = "プロジェクトがありません";
+"dashboard.emptyBody" = "最初のプロジェクトを作成してFP計算を始めましょう。";
+"dashboard.createFirst" = "最初のプロジェクトを作成";
+"dashboard.openGlossary" = "用語集";
+"dashboard.openSettings" = "設定";
+"dashboard.newProject" = "新規プロジェクト";
+"dashboard.updatedAt" = "更新: %@";
+
+// Project
+"project.name" = "プロジェクト名";
+"project.namePlaceholder" = "例: ECプラットフォーム";
+"project.description" = "説明";
+"project.descriptionPlaceholder" = "簡単な説明 (任意)";
+"project.language" = "主要言語";
+"project.languagePlaceholder" = "例: TypeScript, Java";
+"project.totalUFP" = "総 UFP";
+"project.vaf" = "VAF";
+"project.totalAFP" = "総 AFP";
+"project.tabs.transactions" = "トランザクション";
+"project.tabs.vaf" = "VAF 設定";
+"project.calculateResult" = "結果を計算";
+"project.newTransaction" = "新規トランザクション";
+"project.emptyTx" = "トランザクションがありません";
+"project.emptyTxBody" = "ILF / EIF / EI / EO / EQ を追加してFPを計算します。";
+"project.addTransaction" = "トランザクション追加";
+"project.deleteProjectTitle" = "プロジェクトを削除しますか？";
+"project.deleteProjectBody" = "プロジェクトと全トランザクションが完全に削除されます。";
+"project.duplicateTitle" = "プロジェクトを複製";
+"project.vafDescription" = "14の一般システム特性を 0 (影響なし) から 5 (強い影響) で評価してください。";
+"project.saveVAF" = "VAF 設定を保存";
+"project.vafSaved" = "VAF 設定を保存しました";
+
+// Transaction
+"transaction.name" = "トランザクション名";
+"transaction.namePlaceholder" = "例: ユーザーログインフォーム";
+"transaction.notes" = "メモ";
+"transaction.notesPlaceholder" = "任意のメモ";
+"transaction.selectType" = "トランザクション種別";
+"transaction.det" = "DET (データ要素タイプ)";
+"transaction.detHint" = "ユーザーが認識可能な一意で重複しないフィールド数。";
+"transaction.ret" = "RET (レコード要素タイプ)";
+"transaction.retHint" = "ユーザーが認識可能なデータのサブグループ数。";
+"transaction.ftr" = "FTR (参照ファイルタイプ)";
+"transaction.ftrHint" = "このトランザクションが読み書きする ILF / EIF の数。";
+"transaction.livePreview" = "ライブプレビュー";
+"transaction.save" = "トランザクションを保存";
+"transaction.update" = "トランザクションを更新";
+"transaction.deleteTitle" = "トランザクションを削除しますか？";
+"transaction.deleteBody" = "この操作は元に戻せません。";
+"transaction.errorDetMin" = "DET は 1 以上である必要があります";
+"transaction.errorNameRequired" = "トランザクション名は必須です";
+"transaction.errorProjectNameRequired" = "プロジェクト名は必須です";
+
+// Transaction types
+"type.ILF.short" = "内部論理ファイル";
+"type.ILF.desc" = "アプリが保持・管理するデータ";
+"type.ILF.example" = "アプリのデータベースに保存されたユーザーアカウント。";
+"type.EIF.short" = "外部インターフェイスファイル";
+"type.EIF.desc" = "外部システムから参照するデータ";
+"type.EIF.example" = "サードパーティ API から取得する商品カタログ。";
+"type.EI.short" = "外部入力";
+"type.EI.desc" = "アプリに入ってくるデータ (例: フォーム)";
+"type.EI.example" = "ユーザーが送信するログインフォーム。";
+"type.EO.short" = "外部出力";
+"type.EO.desc" = "処理を伴って出力されるデータ (例: レポート)";
+"type.EO.example" = "PDF として生成される月次売上レポート。";
+"type.EQ.short" = "外部照会";
+"type.EQ.desc" = "処理を伴わないデータ取得 (例: 検索)";
+"type.EQ.example" = "絞り込み結果を返す検索ボックス。";
+
+// Result
+"result.title" = "FP 結果";
+"result.breakdown" = "FP 内訳";
+"result.summary" = "種別サマリー";
+"result.typeCol" = "種別";
+"result.countCol" = "件数";
+"result.ufpCol" = "UFP";
+"result.percentCol" = "%";
+"result.estimate" = "人月見積";
+"result.low" = "楽観";
+"result.average" = "標準";
+"result.high" = "保守";
+"result.teamSize" = "チーム規模";
+"result.calendarMonths" = "か月";
+"result.productivityNote" = "生産性: %@ FP / 人月";
+"result.industryNote" = "業界の一般的な範囲: 人月あたり 5–15 FP";
+"result.export" = "エクスポート";
+"result.copySummary" = "サマリーをコピー";
+"result.share" = "共有";
+"result.copied" = "サマリーをクリップボードにコピーしました";
+
+// Glossary
+"glossary.title" = "FP 用語集";
+"glossary.intro" = "このアプリで使用する IFPUG ファンクションポイント分析用語の実践ガイド。";
+"glossary.quickReference" = "クイックリファレンス";
+"glossary.whenToUse" = "使いどころ";
+"glossary.parameters" = "複雑度パラメータ";
+"glossary.example" = "例";
+"glossary.terms.ILF.desc" = "内部論理ファイル (ILF) は、アプリケーション境界内で管理される、ユーザーが認識可能な論理的に関連したデータのグループです。";
+"glossary.terms.ILF.whenToUse" = "アプリが作成・参照・更新・削除するテーブルやデータストア。";
+"glossary.terms.ILF.example" = "アプリのデータベースに保存されるユーザーアカウントデータ。";
+"glossary.terms.EIF.desc" = "外部インターフェイスファイル (EIF) は、他のアプリケーションが管理し、本アプリが参照するデータのグループです。";
+"glossary.terms.EIF.whenToUse" = "他システムから読み込むが保有しないデータ。";
+"glossary.terms.EIF.example" = "サードパーティ API から取得する商品カタログ。";
+"glossary.terms.EI.desc" = "外部入力 (EI) は、アプリケーション境界の外から内へ入ってくるデータ・制御情報を処理します。";
+"glossary.terms.EI.whenToUse" = "フォーム送信、受信 API、一括インポートなど。";
+"glossary.terms.EI.example" = "ユーザーが送信するログインフォーム。";
+"glossary.terms.EO.desc" = "外部出力 (EO) は、計算や集計などの派生データを含め、アプリケーション境界の外へ送出するデータ・制御情報です。";
+"glossary.terms.EO.whenToUse" = "計算・集計を行うレポート、エクスポート、ダッシュボード。";
+"glossary.terms.EO.example" = "PDF として生成・ダウンロードされる月次売上レポート。";
+"glossary.terms.EQ.desc" = "外部照会 (EQ) は、ILF を維持せず派生データを含まない、入出力対のデータ取得です。";
+"glossary.terms.EQ.whenToUse" = "既存データのみ返す単純な問い合わせ・検索。";
+"glossary.terms.EQ.example" = "絞り込んだ商品結果を返す検索ボックス。";
+"glossary.terms.DET.desc" = "データ要素タイプ (DET) は、ユーザーが認識可能で一意、かつ重複しないフィールドです。";
+"glossary.terms.DET.example" = "フォームの各フィールド (メール・パスワード・氏名 = 3 DET)。";
+"glossary.terms.RET.desc" = "レコード要素タイプ (RET) は、ILF/EIF 内でユーザーが認識可能なデータ要素のサブグループです。";
+"glossary.terms.RET.example" = "サブセクション付きユーザープロフィール: 基本情報 + 住所 = 2 RET。";
+"glossary.terms.FTR.desc" = "参照ファイルタイプ (FTR) は、トランザクション機能 (EI/EO/EQ) が読み書きする ILF または EIF です。";
+"glossary.terms.FTR.example" = "ログイン EI が Users と Roles テーブルを読む = 2 FTR。";
+"glossary.terms.UFP.desc" = "未調整ファンクションポイント — 技術的調整を行う前の、複雑度重み付けされた FP の合計。";
+"glossary.terms.UFP.example" = "Low EI 5 件 × 3 UFP = 15 UFP。";
+"glossary.terms.AFP.desc" = "調整済みファンクションポイント — UFP に価値調整係数 (VAF) を乗じた値。";
+"glossary.terms.AFP.example" = "AFP = UFP × VAF。";
+"glossary.terms.VAF.desc" = "価値調整係数 — 14の一般システム特性から導出される 0.65〜1.35 の乗数。";
+"glossary.terms.VAF.example" = "VAF = 0.65 + (0.01 × 14 GSC の合計)。";
+"glossary.terms.GSC.desc" = "一般システム特性 — システムの技術的・運用的文脈を表す 14 の要素、各 0–5 点。";
+"glossary.terms.GSC.example" = "性能、トランザクション率、再利用性、複数拠点など。";
+"glossary.terms.MM.desc" = "人月 — 1 人が 1 か月作業する工数単位。AFP ÷ 生産性係数 で算出。";
+"glossary.terms.MM.example" = "60 AFP ÷ 8 FP/人月 = 7.5 人月。";
+
+// Settings
+"settings.title" = "設定";
+"settings.language" = "言語";
+"settings.systemDefault" = "システムデフォルト";
+"settings.productivity" = "生産性係数";
+"settings.productivityDesc" = "人月あたり FP。大きいほど必要期間は短くなります。";
+"settings.presets" = "プリセット";
+"settings.presetIndustry" = "業界平均";
+"settings.presetExperienced" = "熟練チーム";
+"settings.presetComplex" = "複雑なドメイン";
+"settings.low" = "低";
+"settings.average" = "平均";
+"settings.high" = "高";
+"settings.vafToggle" = "AFP に VAF を適用";
+"settings.vafToggleDesc" = "オフにすると AFP は UFP と等しくなります (未調整モード)。";
+"settings.haptics" = "ハプティックフィードバック";
+"settings.hapticsDesc" = "複雑度の変化時に軽い振動。";
+"settings.quickAdd" = "クイック追加テンプレート";
+"settings.quickAddDesc" = "トランザクションのプリセット束を有効化。";
+"settings.data" = "データ管理";
+"settings.clearAll" = "全データ削除";
+"settings.clearTitle" = "全データを削除しますか？";
+"settings.clearBody" = "全プロジェクト・トランザクション・設定が完全に削除されます。元に戻せません。";
+"settings.about" = "このアプリについて";
+"settings.version" = "バージョン";
+"settings.privacy" = "プライバシー";
+"settings.privacyBody" = "FP Meter はすべてのデータを端末内にのみ保存します。サーバーには一切送信されません。";
+
+// Quick Add
+"quickAdd.title" = "クイック追加テンプレート";
+"quickAdd.description" = "プリセットのトランザクション束を一度に追加します。";
+"quickAdd.crudTitle" = "CRUD フォームセット";
+"quickAdd.crudDesc" = "1 ILF + 4 トランザクション (作成、取得、更新、削除 + 一覧)。";
+"quickAdd.loginTitle" = "認証セット";
+"quickAdd.loginDesc" = "1 ILF (Users) + ログイン EI + ログアウト EI + パスワードリセット EI。";
+"quickAdd.reportTitle" = "レポートモジュール";
+"quickAdd.reportDesc" = "1 EO (レポート生成) + 2 EQ (絞り込みクエリ)。";
+"quickAdd.bundleAdded" = "%d 件のトランザクションを追加しました";
+
+// GSC
+"gsc.dataCommunications" = "データ通信";
+"gsc.dataCommunications.desc" = "システムの情報伝送・交換に使う通信手段の程度。";
+"gsc.distributedDataProcessing" = "分散データ処理";
+"gsc.distributedDataProcessing.desc" = "分散データ・処理機能の取扱い。";
+"gsc.performance" = "性能";
+"gsc.performance.desc" = "応答時間・スループットを設計でどれだけ考慮したか。";
+"gsc.heavilyUsedConfiguration" = "高負荷構成";
+"gsc.heavilyUsedConfiguration.desc" = "現行ハードウェアプラットフォームの利用頻度。";
+"gsc.transactionRate" = "トランザクション率";
+"gsc.transactionRate.desc" = "トランザクションの実行頻度。";
+"gsc.onlineDataEntry" = "オンラインデータ入力";
+"gsc.onlineDataEntry.desc" = "情報のうちオンラインで入力される割合。";
+"gsc.endUserEfficiency" = "エンドユーザー効率";
+"gsc.endUserEfficiency.desc" = "エンドユーザー効率を考慮して設計されたか。";
+"gsc.onlineUpdate" = "オンライン更新";
+"gsc.onlineUpdate.desc" = "オンライントランザクションで更新される ILF 数。";
+"gsc.complexProcessing" = "複雑な処理";
+"gsc.complexProcessing.desc" = "論理・数学処理の広範さ。";
+"gsc.reusability" = "再利用性";
+"gsc.reusability.desc" = "多数のユーザーのニーズに対応する設計か。";
+"gsc.installationEase" = "インストール容易性";
+"gsc.installationEase.desc" = "変換・インストールの難易度。";
+"gsc.operationalEase" = "運用容易性";
+"gsc.operationalEase.desc" = "起動・バックアップ・リカバリ手順の効率性。";
+"gsc.multipleSites" = "複数拠点";
+"gsc.multipleSites.desc" = "複数拠点対応の設計か。";
+"gsc.facilitateChange" = "変更容易性";
+"gsc.facilitateChange.desc" = "変更を促進するよう設計・開発・支援されたか。";
